@@ -26,13 +26,17 @@ body{
 
 .categoria-menu{
     line-height: 1.5;
-    margin: 0.5rem 0 0 2rem;
+    margin: 0.9rem 0 0 8rem;
     list-style-type: none;
     text-transform: lowercase;
     font-weight: bold;
     font-style: italic;
     padding: 0;
     text-align: inherit;
-
+    color: #796384;
 }
+
+
+
+
 

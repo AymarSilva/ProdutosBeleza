@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 4vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
 .center{
     display: flex;
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 2%; 
+    padding: 0 3%; 
 }
 
 .logo{
@@ -18,5 +23,11 @@
     height: 280px;
     padding: 3%;
 
+}
+
+.categoria-menu{
+    line-height: 1.5;
+    margin: 0.5rem 0 0 2rem;
+    
 }
 

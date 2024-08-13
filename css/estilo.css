@@ -20,8 +20,8 @@ body{
 .logo{
     display: flex;
     justify-content: center;
-    height: 280px;
-    padding: 3%;
+    height: 180px;
+    padding: 1px;
 }
 
 .categoria-menu{

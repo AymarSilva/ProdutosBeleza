@@ -31,5 +31,8 @@ body{
     text-transform: lowercase;
     font-weight: bold;
     font-style: italic;
+    padding: 0;
+    text-align: inherit;
+
 }
 

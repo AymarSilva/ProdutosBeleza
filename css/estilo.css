@@ -143,7 +143,7 @@ header,
     border-radius: 20px;
     margin-bottom: 20px;
     overflow: hidden;
-    display: inline-block;
+    
 }
 
 .muier {
@@ -183,8 +183,8 @@ header,
     height: 600px;
     width: 80%;
     margin: 21%;
-    margin-top: -446px;
     position: relative;
+    margin-top: -24%;
 }
 
 

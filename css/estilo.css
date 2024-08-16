@@ -180,7 +180,8 @@ header,
 .page-container {
     background-color: #e8ddef;
     border-radius: 20px;
-    height: 600px;
+    /* height: 600px; isso e ruim*/
+    padding: 15px;
     width: 80%;
     margin: 21%;
     position: relative;

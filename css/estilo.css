@@ -18,12 +18,16 @@ body {
     padding: 0 3%;
 }
 
+.conteiner-logo{
+    justify-content: center;
+    display: flex;
+}
 .logo {
     display: flex;
     justify-content: center;
     height: 180px;
     padding: 1px;
-           
+    width: 100%;
 }
 
 .logo-zoom {
@@ -33,7 +37,7 @@ body {
     height: auto;
 }
 
-.logo:hover {
+.logo img:hover {
     transform: scale(1.2);
 }
 
@@ -200,3 +204,4 @@ header,
 .exit-icon {
     color: black;
 }
+

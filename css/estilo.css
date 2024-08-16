@@ -1,30 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body{
+body {
     margin: 4vh;
     font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.center{
+.center {
     display: flex;
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 3%; 
+    padding: 0 3%;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     height: 180px;
     padding: 1px;
+           
 }
 
-.categoria-menu  {
+.logo-zoom {
+    display: block;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.categoria-menu {
     line-height: 1.5;
     list-style-type: none;
     text-transform: lowercase;
@@ -34,82 +47,156 @@ body{
     display: flex;
     justify-content: space-between;
     flex-flow: column;
-    text-align: inherit;     
+    text-align: inherit;
     color: #796384;
     flex-wrap: wrap;
-    gap: 5px;        
+    gap: 5px;
 }
 
 
-.menu-container{
-   background-color: #e8ddef; 
-   display: flex;
-   justify-content: center;
-   padding: 20px;
-   border-radius: 20px;
-   width: 20%;
-   height: 100%;
-
+.menu-container {
+    background-color: #e8ddef;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.cart{
+.cart {
     margin: auto;
     text-align: center;
     padding-top: 10px;
     transition: transform .5s;
 }
-svg{
+
+svg {
     width: 30px;
     color: #796384;
-    
+
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-   
+
 }
 
-.icon-cart{
+.icon-cart {
     position: relative;
 }
 
-.ci{
+.text-favs {
     font-weight: bold;
     font-style: italic;
     color: #796384;
-   
+
 }
 
-.icon-favs{
-    position: relative; 
-    
+.icon-favs {
+    position: relative;
+
 }
 
-.favs{
+.favs {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     display: inline-block;
-    padding: 10px;     
+    padding: 10px;
 }
 
-header, .favs {
+header,
+.favs {
     margin: 0 auto;
 }
 
-.icon-cart{
+.icon-cart {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     gap: 10px;
 }
 
-.filtro{
+.filtro {
     background-color: #927c9e;
-    border-radius: 20px;
-    width: 20%;
+    border-radius: 10px;
     color: white;
-    justify-content: center;
+    width: 300px;
+    text-align: center;
+
+}
+
+.name {
+    background-color: #927c9e;
+    border-radius: 8px;
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+
+.conteiner-perfil {
+    background-color: #e8ddef;
     display: flex;
+    justify-content: center;
+    padding: 60px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.muier {
+    border-radius: 80%;
+    padding: 1px;
+    border: 2px solid transparent;
+    background: linear-gradient(#b89dc6, #584066);
+    margin-left: 150px;
+    margin-top: -50px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.muier-zoom {
+    display: block;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.muier:hover {
+    transform: scale(1.2);
+}
+
+.sair {
+    background-color: white;
+    border-radius: 8px;
+    border: solid 1px black;
+    color: black;
+    width: 40%;
+    text-align: center;
+
+}
+
+.page-container {
+    background-color: #e8ddef;
+    border-radius: 20px;
+    height: 600px;
+    width: 80%;
+    margin: 21%;
+    margin-top: -446px;
+    position: relative;
+}
+
+
+.page-categorias {
+    width: 20%;
+    height: 100%;
+}
+
+.filters-icon {
+    color: white;
+}
+
+.exit-icon {
+    color: black;
 }

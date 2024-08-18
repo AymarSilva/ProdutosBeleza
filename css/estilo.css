@@ -170,27 +170,27 @@ header,
     transform: scale(1.2);
 }
 
-.nome-muier{
-    margin: 0;
+.nome-muier {
     display: flex;
     align-items: center;
     color: white;
     font-size: 28px;
     margin-bottom: 3px;
 }
+
 .sair {
     background-color: white;
     border-radius: 8px;
-    border: solid 1px black;
     color: black;
     width: 60%;
     text-align: center;
-    display: flex;           
-    align-items: center;     
+    display: flex;
+    align-items: center;
 
 }
-.saida{
-    margin: 0;  
+
+.saida {
+    margin: 0;
     font-size: 24px;
 }
 

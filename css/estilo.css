@@ -18,10 +18,11 @@ body {
     padding: 0 3%;
 }
 
-.conteiner-logo{
+.conteiner-logo {
     justify-content: center;
     display: flex;
 }
+
 .logo {
     display: flex;
     justify-content: center;
@@ -134,8 +135,7 @@ header,
 .name {
     background-color: #927c9e;
     border-radius: 8px;
-    color: white;
-    width: 60%;
+    width: 100%;
     text-align: center;
 }
 
@@ -147,7 +147,7 @@ header,
     border-radius: 20px;
     margin-bottom: 20px;
     overflow: hidden;
-    
+
 }
 
 .muier {
@@ -155,7 +155,6 @@ header,
     padding: 1px;
     border: 2px solid transparent;
     background: linear-gradient(#b89dc6, #584066);
-    margin-left: 150px;
     margin-top: -50px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
@@ -171,14 +170,28 @@ header,
     transform: scale(1.2);
 }
 
+.nome-muier{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 3px;
+}
 .sair {
     background-color: white;
     border-radius: 8px;
     border: solid 1px black;
     color: black;
-    width: 40%;
+    width: 60%;
     text-align: center;
+    display: flex;           
+    align-items: center;     
 
+}
+.saida{
+    margin: 0;  
+    font-size: 24px;
 }
 
 .page-container {
@@ -204,5 +217,38 @@ header,
 
 .exit-icon {
     color: black;
+    margin-right: 8px;
+    display: flex;
+    vertical-align: middle;
+    float: left;
 }
 
+.namesair {
+    width: 100%;
+    flex-direction: column;
+    margin-top: -60px;
+    position: relative;
+    left: -56px;
+
+}
+
+/* .container-dev-ras{
+    width: 100%;
+    text-align: center;
+    
+   
+    
+}
+
+.rastrear{
+    
+}
+
+.devolver{
+    
+    
+}
+
+.rastrear-devolver{
+    
+} */

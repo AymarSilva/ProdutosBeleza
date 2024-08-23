@@ -137,7 +137,7 @@ header,
 .name {
     background-color: #927c9e;
     border-radius: 8px;
-    width: 100%;
+    width: 85%;
     text-align: center;
 }
 
@@ -189,7 +189,7 @@ header,
     background-color: white;
     border-radius: 8px;
     color: black;
-    width: 60%;
+    width: 44%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -224,39 +224,36 @@ header,
 
 .exit-icon {
     color: black;
-    margin-right: 8px;
+    /* margin-right: 0px; */
     display: flex;
     vertical-align: middle;
     float: left;
 }
 
-.namesair {
+.container-name-sair {
     width: 100%;
     flex-direction: column;
     margin-top: -60px;
-     position: relative; 
-    left: -56px;
-
+     /* position: relative;  */
+     margin-left: -55px;
 }
 
-/* .container-dev-ras{
-    width: 100%;
+ .container-dev-ras{
+    width: 20%;
     text-align: center;
-    
-   
-    
+    display: flex;
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 51px;     
 }
 
-.rastrear{
-    
-}
-
+.rastrear, 
 .devolver{
-    
-    
+    font-size: 7px;
 }
 
 .rastrear-devolver{
-    
-} */
+    display: flex;
+    gap: 40px;
+} 
 

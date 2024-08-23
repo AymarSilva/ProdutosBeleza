@@ -89,8 +89,9 @@ header {
 }
 
 .icon-cart {
-    position: relative;
-}
+     position: relative;
+     top: 70px;
+} 
 
 .text-favs {
     font-weight: bold;
@@ -99,11 +100,11 @@ header {
 
 }
 
-.icon-favs {
-    position: relative;
-
-}
-
+/* .icon-favs {
+      position: relative; 
+     
+} * */
+ 
 .favs {
     display: flex;
     justify-content: space-between;
@@ -120,7 +121,8 @@ header,
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 15px;
+    
 }
 
 .filtro {
@@ -151,10 +153,10 @@ header,
 }
 
 .muier {
-    border-radius: 50%;
+    border-radius: 48%;
     padding: 1px;
     border: 2px solid transparent;
-    background: linear-gradient(#b89dc6, #584066);
+    background: linear-gradient(45deg,#b89dc6, #584066);
     margin-top: -50px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
@@ -201,7 +203,7 @@ header,
     padding: 15px;
     width: 80%;
     margin: 21%;
-    position: relative;
+    /* position: relative; */
     margin-top: -24%;
 }
 
@@ -227,7 +229,7 @@ header,
     width: 100%;
     flex-direction: column;
     margin-top: -60px;
-    position: relative;
+     position: relative; 
     left: -56px;
 
 }

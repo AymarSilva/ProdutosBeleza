@@ -100,10 +100,14 @@ header {
 
 }
 
-/* .icon-favs {
-      position: relative; 
-     
-} * */
+ .icon-favs {
+     cursor: pointer;
+     display: inline-block;    
+}
+.cartfav{
+    cursor: pointer;
+    display: inline-block;
+}
  
 .favs {
     display: flex;
@@ -193,6 +197,9 @@ header,
     text-align: center;
     display: flex;
     align-items: center;
+    display: block;
+    display: inline-block;
+    cursor: pointer;
 
 }
 
@@ -228,6 +235,8 @@ header,
     display: flex;
     vertical-align: middle;
     float: left;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .container-name-sair {
@@ -250,6 +259,8 @@ header,
 .rastrear, 
 .devolver{
     font-size: 7px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .rastrear-devolver{
@@ -257,3 +268,15 @@ header,
     gap: 40px;
 } 
 
+.button {
+    display: inline-block; 
+    background-color: #e8ddef; 
+    text-decoration: none;
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.button:hover {
+    background-color: #927c9e;
+    border-radius: 10px;
+}

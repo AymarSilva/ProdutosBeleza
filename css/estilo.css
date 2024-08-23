@@ -254,10 +254,9 @@ header,
 .exit-icon {
     color: black;
     /* margin-right: 0px; */
-    display: flex;
     vertical-align: middle;
     float: left;
-    display: inline-block;
+    display: flex;
     cursor: pointer;
 }
 

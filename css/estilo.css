@@ -97,12 +97,12 @@ header {
     font-weight: bold;
     font-style: italic;
     color: #796384;
-    transition: background-color 0.3s; 
+    transition: background-color 0.15s; 
 }
 
 .text-favs:hover{
-    background-color: #927c9e;
-    border-radius: 8px;
+    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
+    border-radius: 5px;
 }
 
  .icon-favs {
@@ -280,9 +280,9 @@ header,
     text-decoration: none;
     border: none; 
     cursor: pointer;
-    transition: background-color 0.3s; 
+    transition: background-color 0.15s; 
 }
 .button:hover {
-    background-color: #927c9e;
-    border-radius: 10px;
+    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
+    border-radius: 5px;
 }

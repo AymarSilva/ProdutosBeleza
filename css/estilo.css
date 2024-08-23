@@ -152,6 +152,11 @@ header,
 
 }
 
+.conteiner-fotomuier{
+    width: 100%;
+    display: flex;
+    margin-right: -50%;
+}
 .muier {
     border-radius: 48%;
     padding: 1px;

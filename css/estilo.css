@@ -97,7 +97,12 @@ header {
     font-weight: bold;
     font-style: italic;
     color: #796384;
+    transition: background-color 0.3s; 
+}
 
+.text-favs:hover{
+    background-color: #927c9e;
+    border-radius: 8px;
 }
 
  .icon-favs {
@@ -262,6 +267,7 @@ header,
     display: inline-block;
     cursor: pointer;
 }
+
 
 .rastrear-devolver{
     display: flex;

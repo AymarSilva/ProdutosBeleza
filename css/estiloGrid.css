@@ -7,6 +7,7 @@
     background-color: #927c9e;
     padding: 15px;
     display: grid;
+    grid-auto-flow: row;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -188,8 +189,8 @@
 .rodarCima{
     transform: rotate(-90deg) !important;
 }
-@media (min-width: 1080px) {
-    .produtos {
+@media (max-width: 768px) {
+    .page-container .produtos {
         grid-template-columns: repeat(1, 1fr);
     }
 }

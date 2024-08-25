@@ -317,7 +317,6 @@ header,
     border-radius: 5px;
 }
 
-/* Estilos para dispositivos menores que 768px */
 @media (max-width: 768px) {
     .center {
         padding: 0 2%;
@@ -405,7 +404,7 @@ header,
     }
 }
 
-/* Estilos para dispositivos muito pequenos (ex.: smartphones) */
+
 @media (max-width: 480px) {
     .logo {
         height: 120px;

@@ -115,16 +115,18 @@ header {
     display: inline-block;
 }
 
-.carro-icon, .favcora-icon {
+.carro-icon,
+.favcora-icon {
     display: inline-block;
     cursor: pointer;
 }
-.carro-icon:hover{
+
+.carro-icon:hover {
     background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
     border-radius: 5px;
 }
 
-.favcora-icon:hover{
+.favcora-icon:hover {
     background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
     border-radius: 5px;
 }
@@ -321,9 +323,10 @@ header,
     .center {
         padding: 0 2%;
     }
-    .caixa-pesquisa{
-        margin-left: -50%;
-    }    
+
+    .caixa-pesquisa {
+        left: -400px;
+    }
 
     .categoria-menu {
         flex-direction: column;
@@ -335,24 +338,23 @@ header,
         border-radius: 15px;
     }
 
-    .header, .favs {
+    .header,
+    .favs {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .icon-cart {
         position: relative;
-        top: 0;
-        justify-content: center;
     }
 
-    .filtro, .name {
+    .filtro {
         width: 100%;
         margin: 0px 0;
     }
 
-    .conteiner-perfil {
-        padding: 30px;
+    .name {
+        width: 100%;
     }
 
     .conteiner-fotomuier {
@@ -360,16 +362,17 @@ header,
     }
 
     .muier {
-        margin-top: -30px;
+        margin-left: -100px;
     }
 
     .nome-muier {
-        font-size: 24px;
+        font-size: 16px;
+        margin-bottom: 6px;
     }
 
     .sair {
-        width: 100%;
-        margin-top: 10px;
+        width: 100px;
+        font-size: 24px;
     }
 
     .page-container {
@@ -386,11 +389,14 @@ header,
     .container-dev-ras {
         width: 100%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 30px;
+        left: -125px;
         position: relative;
+        transform: scale(0.8);
     }
 
-    .rastrear, .devolver {
+    .rastrear,
+    .devolver {
         font-size: 10px;
     }
 

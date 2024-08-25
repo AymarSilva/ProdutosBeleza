@@ -13,20 +13,48 @@
     border-radius: 14px;
 }
 .produtos .produto{
+    position: relative;
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
     justify-content: space-between;
     border-radius: 14px;
     width: 250px;
     height: 330px;
     padding: 15px;
     background-image: linear-gradient(to bottom,#b89dc6,#f9f2ff);
-    cursor: pointer;
 }
 .produto .cartao{
     border: 3px white solid;
     border-radius: 20px;
-    transition: 1.2s ease-out;
+    width: 100%;
+    height: calc(100% );
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: 0.5s ease-out,
+    transform 0.5s ease-in-out,
+    filter 2s ease-in-out; /*Efeitos do JS*/
+}
+.cartaoFrente{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* transition: 0.25s ease-in-out; */
+}
+.cartaoTras{
+    position: absolute;
+    display: flex;
+    background-color: #b89dc6;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg); /*Precisa estar invertido de padrao, quando clicado, desinverte*/
+    transition: 0.5s ease-in-out;
 }
 .produto .produto-img{
     width: 100%;
@@ -36,16 +64,16 @@
     background-color: #b89dc6;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    transition: 1s ease-out;
 }
 .produto .produto-img > img{
-    width: 96px;
-    height: 96px;
+    width: 128px;
+    height: 128px;
+    filter: drop-shadow(0 0 20px hsl(280,40%,85%));
 }
 .produto .produto-info{
     display: flex;
+    flex: 1;
     flex-direction: column;
-    transition: 1s ease-out;
 }
 .produto .produto-info .prod-tit{
     border-bottom: 2px solid gray;
@@ -59,14 +87,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
     background-color: hsl(280,30%,85%);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 .produto .produto-info .prod-preco .prod-valor{
     display: flex;
-    width: calc(100% - (64px + 8px));
-    padding: 10px 6px;
+    width: calc(100% - (64px + 8px + 12px));
     font-size: 14px;
     align-items: center;
     column-gap: 8px;
@@ -98,43 +127,47 @@
     width: 32px;
 }
 .descricao{
-    /* margin: 10px 0; */
-    display: none;
-    transform: scaleX(-1); /*Precisa estar invertido de padrao, quando clicado, desinverte*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
 }
 .descricao h2{
     text-align: center;
     text-decoration: underline;
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin-bottom: 12px;
 }
 .descricao hr{
     border-radius: 100%;
     background-color: white;
     color: white;
+    margin: 0 10px;
 }
 .descricao .background-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: hsl(280,50%,95%);
     border-radius: 20px;
-    padding: 6px;
-    margin-bottom: 10px;
+    margin: 0 20px;
 }
 .descricao p{
-    padding: 0 10px;
+    padding: 0 20px 0 20px;
     font-size: 0.7rem;
     color: black;
+    text-align: left;
     font-weight: bold;
     max-height: 0;
     overflow: hidden; /*Esconde o conteudo*/
     overflow-y: auto; /*Adiciona barra de rolagem vertical*/ 
-    transition: max-height 0.5s ease-in;
+    transition: max-height 0.5s ease-in, margin 0.5s ease-out;
 }
 .descricao .background-desc .expandir{
     background-image: linear-gradient(to bottom,hsl(280,50%,80%),hsl(280,30%,80%));
+    margin: 4px 40px;
     text-align: center;
-    border-radius: 50px;
-    margin: 4px 30px;
+    border-radius: 20px;
     font-weight: bold;
     transition: 1s ease-in;
 }
@@ -143,18 +176,20 @@
     transition: 0.5s ease-in;
 }
 .flip{
-    transform: scaleX(-1);
-}
-.opacidade1{
-    display: block !important;
-}
-.opacidade0{
-    display: none !important;
+    transform: rotateY(180deg) !important;
 }
 .altura{
-    max-height: 120px !important;
+    max-height: 80px !important;
     transition: 1s ease-out;
+}
+.margem{
+    margin: 6px 0;
 }
 .rodarCima{
     transform: rotate(-90deg) !important;
+}
+@media (min-width: 1080px) {
+    .produtos {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

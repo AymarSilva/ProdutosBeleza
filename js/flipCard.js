@@ -1,52 +1,74 @@
-let produto = document.getElementsByClassName("produto");
+//Retorna um objeto de elementos com classe produto
+const produto = document.getElementsByClassName("produto");
+
+//Transforma o objeto retornado em uma array
 const prodFormatado = Array.from(produto);
 
+//Variavel global para setInterval
+let intervalo = null;
+
 function flipAction(objeto) {
-    let cartao = objeto.querySelector('.cartao');
-    let imagem = objeto.querySelector('.produto-img').querySelector('img');
-    let info = objeto.querySelector('.produto-info');
-
-    console.log("cliquei: ",cartao)
-
-    console.log(imagem);
-    console.log(info.querySelectorAll("*"));
+    const cartao = objeto.querySelector('.cartao');
 
     cartao.classList.toggle("flip");
-    setTimeout(() => {
-        imagem.classList.toggle("opacidade0");
-        info.classList.toggle("opacidade0"); 
-    }, 100);
+};
 
-    let abaDescricao = objeto.querySelector('.produto-img').querySelector(".descricao");
-    abaDescricao.classList.toggle("opacidade1");
+function hoverAction(objeto) {
+    const cartao = objeto.querySelector('.cartao');
+    if (!cartao.classList.contains("flip")) {
+        let efeitos = {};
 
-    if(cartao.classList.contains("flip")){
-        objeto.querySelector('.produto-img').style.borderBottomLeftRadius = "20px";
-        objeto.querySelector('.produto-img').style.borderBottomRightRadius = "20px"; 
-    }else{
-        objeto.querySelector('.produto-img').style.borderBottomLeftRadius = "0";
-        objeto.querySelector('.produto-img').style.borderBottomRightRadius = "0"; 
+        efeitos = {
+            rotateY: "(-180deg)",
+        };
+
+        //Definir intervalo afim de executar a partir de determinado tempo (2s)
+        intervalo = setInterval(() => {
+            // cartao.style.transition = `transform ${efeitos.transition}`;
+            cartao.style.transform = `rotateY${efeitos.rotateY}`;
+            setTimeout(() => {
+                cartao.style.transform = null;
+            }, 1200);
+        },2000)
     };
 };
 
+function hoverOutAction() {
+    clearInterval(intervalo);
+};
+
 function showDescricao(objeto,event){
-    event.stopPropagation();
+    event.stopPropagation(); //Nao propagacao
+
+    //Identifica os objetos
     const descricao = objeto.querySelector('.descricao').querySelector('p');
     const seta = objeto.querySelector('.icon-expandir');  
 
+    //Adiciona efeito aos objetos
     descricao.classList.toggle('altura');
+    descricao.classList.toggle('margem');
 
     if (seta.classList.contains('rodarCima')) {
         seta.classList.remove("rodarCima");
     }else{
         seta.classList.add("rodarCima");
-    }
+    };
 };
+
+//Adiciona funcao clique aos produtos
 
 prodFormatado.forEach(item => {
     item.querySelector(".cartao").addEventListener("click", function() {
         flipAction(item); 
     });
+
+    item.querySelector(".cartao").addEventListener("mouseover", function() {
+        hoverAction(item);
+    });
+    item.querySelector(".cartao").addEventListener("mouseout", function() {
+        hoverOutAction();
+    });
+
     item.querySelector('.expandir').addEventListener("click", function() {
         showDescricao(item,event);
     });

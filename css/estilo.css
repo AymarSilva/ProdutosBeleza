@@ -320,7 +320,7 @@ header,
     border-radius: 5px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1080px) {
     .center {
         padding: 0 2%;
     }

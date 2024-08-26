@@ -189,7 +189,7 @@
 .rodarCima{
     transform: rotate(-90deg) !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .page-container .produtos {
         grid-template-columns: repeat(1, 1fr);
     }

@@ -118,6 +118,7 @@ header {
 .carro-icon, .favcora-icon {
     display: inline-block;
     cursor: pointer;
+    transform: scale(1.4);
 }
 .carro-icon:hover{
     background-image: linear-gradient(to right, #b89dc6, #f9f2ff);

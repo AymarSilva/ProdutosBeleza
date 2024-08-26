@@ -325,7 +325,8 @@ header,
     }
 
     .caixa-pesquisa {
-        left: -400px;
+        left: -395px;
+        transform: scale(0.8);
     }
 
     .categoria-menu {
@@ -354,7 +355,7 @@ header,
     }
 
     .name {
-        width: 100%;
+        width: 110%;
     }
 
     .conteiner-fotomuier {
@@ -362,7 +363,8 @@ header,
     }
 
     .muier {
-        margin-left: -100px;
+        margin-left: -60px;
+        transform: scale(0.9);
     }
 
     .nome-muier {
@@ -390,7 +392,7 @@ header,
         width: 100%;
         margin-left: 0;
         margin-top: 30px;
-        left: -125px;
+        left: -85px;
         position: relative;
         transform: scale(0.8);
     }
@@ -401,6 +403,7 @@ header,
     }
 
     .container-name-sair {
-        margin-left: 0;
+        position: relative;
+        left: 35px;
     }
 }

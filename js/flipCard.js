@@ -11,6 +11,20 @@ function flipAction(objeto) {
     const cartao = objeto.querySelector('.cartao');
 
     cartao.classList.toggle("flip");
+
+    if(cartao.classList.contains("flip")){
+        setTimeout(() => { 
+            let zooms = document.querySelectorAll(".zoomContainer");
+
+            if (zooms) {
+                zooms.forEach(zoom => {
+                    console.log(zoom);
+                    zoom.style.display = "none";
+                });
+            };
+
+        }, 300);
+    }; 
 };
 
 function hoverAction(objeto) {
@@ -48,6 +62,7 @@ function showDescricao(objeto,event){
     descricao.classList.toggle('altura');
     descricao.classList.toggle('margem');
 
+    //Rotaciona seta, sim/nao
     if (seta.classList.contains('rodarCima')) {
         seta.classList.remove("rodarCima");
     }else{
@@ -55,13 +70,33 @@ function showDescricao(objeto,event){
     };
 };
 
-//Adiciona funcao clique aos produtos
+function zoom(i){
+    $(`#imagem${i}`).ezPlus({
+        zoomType: 'lens', //Tipo de zoom: lens, inner
+        cursor: "crosshair", //Tipo de cursor ao aplicar efeito
+        lensShape: 'round', //Formato da lente
+        lensSize: 90, // tamanho da lupa
 
-prodFormatado.forEach(item => {
+        //tempo
+        zoomWindowFadeIn: 500, //Animacao lupa FadeIn
+        zoomWindowFadeOut: 100, //Animacao lupa FadeIn
+        lensFadeIn: 500, //Animacao FadeIn
+        lensFadeOut: 100, //Animacao fadeOut
+        
+        easing: true, //Suavizacao, valor pode ser aumentado. true = 12
+        scrollZoom: true, //Pode ampliar zoom com roda
+    });  
+};
+
+//Adiciona funcao aos produtos
+prodFormatado.forEach((item,index) => {
+    
+    //Animacao flip
     item.querySelector(".cartao").addEventListener("click", function() {
         flipAction(item); 
     });
 
+    //pre-animacao flip afim de avisar usuario que ela existe
     item.querySelector(".cartao").addEventListener("mouseover", function() {
         hoverAction(item);
     });
@@ -69,7 +104,13 @@ prodFormatado.forEach(item => {
         hoverOutAction();
     });
 
+    //Animacao de expandir descricao pedida pelo redator
     item.querySelector('.expandir').addEventListener("click", function() {
         showDescricao(item,event);
+    });
+
+    //Animacao zoom
+    item.querySelector('img').addEventListener("mouseover", function() {
+        zoom(index);
     });
 });

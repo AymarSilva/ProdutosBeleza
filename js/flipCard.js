@@ -13,16 +13,14 @@ function flipAction(objeto) {
     cartao.classList.toggle("flip");
 
     if(cartao.classList.contains("flip")){
+        let zooms = document.querySelectorAll(".zoomContainer");
         setTimeout(() => { 
-            let zooms = document.querySelectorAll(".zoomContainer");
-
             if (zooms) {
                 zooms.forEach(zoom => {
                     console.log(zoom);
                     zoom.style.display = "none";
                 });
             };
-
         }, 300);
     }; 
 };
@@ -75,7 +73,7 @@ function zoom(i){
         zoomType: 'lens', //Tipo de zoom: lens, inner
         cursor: "crosshair", //Tipo de cursor ao aplicar efeito
         lensShape: 'round', //Formato da lente
-        lensSize: 90, // tamanho da lupa
+        lensSize: 150, // tamanho da lupa
 
         //tempo
         zoomWindowFadeIn: 500, //Animacao lupa FadeIn

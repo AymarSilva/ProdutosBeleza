@@ -1,10 +1,11 @@
 .page-container{
+    /* background-color: hsl(280,50%,90%) !important; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .page-container .produtos{
-    background-color: #927c9e;
+    background-color: hsl(260,18%,60%);
     padding: 15px;
     display: grid;
     grid-auto-flow: row;
@@ -23,7 +24,7 @@
     width: 250px;
     height: 330px;
     padding: 15px;
-    background-image: linear-gradient(to bottom,#b89dc6,#f9f2ff);
+    background-image: linear-gradient(to bottom,hsl(270,20%,40%),hsl(270,50%,94%));
 }
 .produto .cartao{
     border: 3px white solid;
@@ -48,7 +49,7 @@
 .cartaoTras{
     position: absolute;
     display: flex;
-    background-color: #b89dc6;
+    background-color: hsl(270,25%,80%);
     justify-content: center;
     border-radius: 20px;
     width: 100%;
@@ -62,7 +63,7 @@
     display: flex;
     justify-content: center;
     padding: 15px;
-    background-color: #b89dc6;
+    background-color: hsl(270,30%,20%);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -141,8 +142,7 @@
 }
 .descricao hr{
     border-radius: 100%;
-    background-color: white;
-    color: white;
+    background-color: hsl(270,50%,10%);
     margin: 0 10px;
 }
 .descricao .background-desc{
@@ -165,7 +165,8 @@
     transition: max-height 0.5s ease-in, margin 0.5s ease-out;
 }
 .descricao .background-desc .expandir{
-    background-image: linear-gradient(to bottom,hsl(280,50%,80%),hsl(280,30%,80%));
+    background-image: linear-gradient(to bottom,hsl(270,20%,60%),hsl(270,20%,75%));
+    color: white;
     margin: 4px 40px;
     text-align: center;
     border-radius: 20px;
@@ -189,7 +190,12 @@
 .rodarCima{
     transform: rotate(-90deg) !important;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1330px) {
+    .page-container .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 720px) {
     .page-container .produtos {
         grid-template-columns: repeat(1, 1fr);
     }

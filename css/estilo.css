@@ -226,7 +226,6 @@ svg {
 .produtos-maquiagem, .li{
     margin-top: 20px;    
     width: 100px;
-    list-style-type: none;
     text-transform: lowercase;
     font-weight: bold;
     font-style: italic;
@@ -255,7 +254,6 @@ svg {
     position: relative;
     top: -59.3rem;   
 }
-
 
 @media (max-width: 1080px) {
     .center {
@@ -287,11 +285,9 @@ svg {
         position: relative;
     }
 
-    .filtro {
-        width: 100%;
-        margin: 0px 0;
+    .produtos-maquiagem{
+        padding: 60px 0;
     }
-
 
     .conteiner-fotomuier {
         margin-right: 0;
@@ -316,6 +312,7 @@ svg {
         width: 100%;
         margin: 15px 0;
         transform: none;
+        position: static;
     }
 
     .page-categorias {

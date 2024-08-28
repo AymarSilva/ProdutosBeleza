@@ -223,7 +223,7 @@ svg {
     gap: 40px;
 }
 
-.produtos-maquiagem, .li{
+.produtos-maquiagem, .li , .filtros{
     margin-top: 20px;    
     width: 100px;
     text-transform: lowercase;
@@ -235,8 +235,8 @@ svg {
     text-align: inherit;
     color: #796384;
     flex-wrap: wrap;
-    gap: 10px;    
-    margin-left: -30px;
+    gap: 20px;    
+    margin-left: -10px;
 }
 
 .saida {
@@ -249,11 +249,14 @@ svg {
     border-radius: 20px;
     display: flex; 
     padding: 15px;
-    margin: 22rem;  
-    margin-right: -10px;    
-    position: relative;
-    top: -59.3rem;   
+    margin: 22rem;
+    position: relative;  
+    margin-right: -10px;  
+    top: -63.6rem;     
 }
+
+
+
 
 @media (max-width: 1080px) {
     .center {

@@ -17,7 +17,6 @@ function flipAction(objeto) {
         setTimeout(() => { 
             if (zooms) {
                 zooms.forEach(zoom => {
-                    console.log(zoom);
                     zoom.style.display = "none";
                 });
             };

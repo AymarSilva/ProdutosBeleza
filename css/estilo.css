@@ -67,10 +67,6 @@ svg {
     transition: background-color 0.15s;
 }
 
-.text-favs:hover {
-    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
-    border-radius: 5px;
-}
 
 .icon-favs {
     cursor: pointer;
@@ -87,16 +83,6 @@ svg {
     display: inline-block;
     cursor: pointer;
     transform: scale(1.4);
-}
-
-.carro-icon:hover {
-    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
-    border-radius: 5px;
-}
-
-.favcora-icon:hover {
-    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
-    border-radius: 5px;
 }
 
 
@@ -182,7 +168,8 @@ svg {
     border-radius: 8px;
     padding: 5px;
     margin-left: -95px;   
-    margin-top: 5px;    
+    margin-top: 5px;  
+    cursor: pointer;  
 }
 
 .sair-perfil h1{
@@ -237,6 +224,7 @@ svg {
     flex-wrap: wrap;
     gap: 20px;    
     margin-left: -10px;
+    cursor: pointer;
 }
 
 .saida {

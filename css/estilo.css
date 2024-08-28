@@ -15,7 +15,6 @@ body {
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 3%;
 }
 
 .conteiner-logo {
@@ -28,13 +27,12 @@ body {
     justify-content: center;
     height: 180px;
     padding: 1px;
-    width: 100%;
 }
 
 .logo-zoom {
     display: block;
     transition: transform 0.3s ease;
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -42,30 +40,6 @@ body {
     transform: scale(1.2);
 }
 
-.categoria-menu {
-    line-height: 1.5;
-    list-style-type: none;
-    text-transform: lowercase;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-    text-align: inherit;
-    color: #796384;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-
-.menu-container {
-    background-color: #e8ddef;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 20px;
-}
 
 .cart {
     margin: auto;
@@ -77,21 +51,14 @@ body {
 svg {
     width: 30px;
     color: #796384;
-
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-
-}
 
 .icon-cart {
     position: relative;
     top: 70px;
 }
+
 
 .text-favs {
     font-weight: bold;
@@ -140,92 +107,137 @@ header {
     padding: 10px;
 }
 
-header,
-.favs {
-    margin: 0 auto;
-}
-
 .icon-cart {
     display: flex;
-    width: 100%;
     justify-content: flex-end;
     gap: 15px;
 
 }
 
-.filtro {
-    background-color: #927c9e;
-    border-radius: 10px;
-    color: white;
+.icon-cart{
+        position: relative;
+        top: 70px;
+}
+
+.perfil-lolo{
+    background: #e8ddef;
+    margin: 20px;
     width: 300px;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.produtos-lolo{
+    background: #e8ddef;
+    margin: 20px;
+    width: 100px;
+    padding: 150px;    
+    border-radius: 10px;
+}
+
+.filtro{
+    background: #927c9e;
+    width: 300px;    
+    margin-top: -150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: -150px;
+}
+
+.filtro h1{
     text-align: center;
-
-}
-
-.name {
-    background-color: #927c9e;
-    border-radius: 8px;
-    width: 85%;
-    text-align: center;
-}
-
-.conteiner-perfil {
-    background-color: #e8ddef;
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-
-}
-
-.conteiner-fotomuier {
-    width: 100%;
-    display: flex;
-    margin-right: -50%;
-}
-
-.muier {
-    border-radius: 48%;
-    padding: 1px;
-    border: 2px solid transparent;
-    background: linear-gradient(45deg, #b89dc6, #584066);
-    margin-top: -50px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-}
-
-.muier-zoom {
-    display: block;
-    transition: transform 0.3s ease;
-    max-width: 100%;
-    height: auto;
-}
-
-.muier:hover {
-    transform: scale(1.2);
-}
-
-.nome-muier {
-    display: flex;
-    align-items: center;
     color: white;
-    font-size: 28px;
-    margin-bottom: 3px;
 }
 
-.sair {
-    background-color: white;
+.foto-perfil .logo-perfil{
+    border-radius: 48px;
+    width: 100px;
+    padding: 1px;
+    border: 2px solid #e8ddef;
+    background: #927c9e;    
+    float: right;
+    margin-right: -85px;
+    margin-top: -50px;    
+    box-shadow: 10px 10px 15px #927c9e;  
+}
+
+.nome-perfil {
+    background: #927c9e;
+    border-radius: 10px;
+    width: 120px;
+    padding: 5px; 
+    margin-top: -100px;  
+    margin-left: -95px;   
+}
+
+.nome-perfil h1{
+    text-align: center;
+    color: white;
+    font-size: 16px
+}
+
+.sair-perfil{
+    background: white;
+    width: 75px;
     border-radius: 8px;
+    padding: 5px;
+    margin-left: -95px;   
+    margin-top: 5px;    
+}
+
+.sair-perfil h1{
+    text-align: center;
+    font-size: 16px;    
+}
+.exit-icon{
     color: black;
-    width: 44%;
+    vertical-align: middle;
+    float: left;
+    display: flex;
+    cursor: pointer;
+}
+
+.filter{
+    color: white;
+}
+
+
+.container-dev-ras {
+    width: 20px;
     text-align: center;
     display: flex;
-    align-items: center;
-    display: block;
+    position: absolute;
+    margin-left: -85px;
+    margin-top: 51px;
+}
+
+.rastrear,
+.devolver {
+    font-size: 10px;
     display: inline-block;
     cursor: pointer;
+}
 
+.rastrear-devolver {
+    display: flex;
+    gap: 40px;
+}
+
+.produtos-maquiagem, .li{
+    margin-top: 20px;    
+    width: 100px;
+    list-style-type: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    text-align: inherit;
+    color: #796384;
+    flex-wrap: wrap;
+    gap: 10px;    
+    margin-left: -30px;
 }
 
 .saida {
@@ -234,91 +246,16 @@ header,
 }
 
 .page-container {
-    background-color: #e8ddef;
+    background: #e8ddef;
     border-radius: 20px;
+    display: flex; 
     padding: 15px;
-    width: 80%;
-    margin: 100px 21%;
-    display: flex;
-    transform: translateY(-536px);
+    margin: 22rem;  
+    margin-right: -10px;    
+    position: relative;
+    top: -59.3rem;   
 }
 
-
-.page-categorias {
-    width: 20%;
-    height: 100%;
-}
-
-.filters-icon {
-    color: white;
-}
-
-.exit-icon {
-    color: black;
-    /* margin-right: 0px; */
-    vertical-align: middle;
-    float: left;
-    display: flex;
-    cursor: pointer;
-}
-
-.container-name-sair {
-    width: 100%;
-    flex-direction: column;
-    margin-top: -60px;
-    /* position: relative;  */
-    margin-left: -55px;
-}
-
-.container-dev-ras {
-    width: 20%;
-    text-align: center;
-    display: flex;
-    position: absolute;
-    margin-left: 55px;
-    margin-top: 51px;
-}
-
-.rastrear,
-.devolver {
-    font-size: 7px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.devolver-icon:hover {
-    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
-    border-radius: 10px;
-}
-
-.caminhao {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.caminhao:hover {
-    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
-    border-radius: 10px;
-}
-
-.rastrear-devolver {
-    display: flex;
-    gap: 40px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #e8ddef;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.15s;
-}
-
-.button:hover {
-    background-image: linear-gradient(to right, #b89dc6, #f9f2ff);
-    border-radius: 5px;
-}
 
 @media (max-width: 1080px) {
     .center {
@@ -355,9 +292,6 @@ header,
         margin: 0px 0;
     }
 
-    .name {
-        width: 110%;
-    }
 
     .conteiner-fotomuier {
         margin-right: 0;

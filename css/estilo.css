@@ -251,9 +251,20 @@ svg {
         padding: 0 2%;
     }
 
+    .foto-perfil, .logo-perfil{
+        margin-top: -70px;
+        transform: scale(0.9);
+    }
+
     .caixa-pesquisa {
-        left: -395px;
+        left: -355px;
+        top: 15px;
         transform: scale(0.8);
+    }
+
+    .icon-favs, .cartfav{
+        transform: scale(0.7);
+        gap: 50px;        
     }
 
     .categoria-menu {
@@ -274,24 +285,16 @@ svg {
 
     .icon-cart {
         position: relative;
+        left: -20px;
+        gap: 0px;
+    }
+
+    .produtos-lolo{
+        margin: 20px;        
     }
 
     .produtos-maquiagem{
         padding: 60px 0;
-    }
-
-    .conteiner-fotomuier {
-        margin-right: 0;
-    }
-
-    .muier {
-        margin-left: -60px;
-        transform: scale(0.9);
-    }
-
-    .nome-muier {
-        font-size: 16px;
-        margin-bottom: 6px;
     }
 
     .sair {

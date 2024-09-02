@@ -20,7 +20,7 @@ function flipAction(objeto) {
                     zoom.style.display = "none";
                 });
             };
-        }, 300);
+        },400);
     }; 
 };
 
